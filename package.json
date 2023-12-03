@@ -9,6 +9,7 @@
   },
   "author": "",
   "license": "MIT",
-  "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "coveralls-next": "^4.2.0"
+  }
 }
