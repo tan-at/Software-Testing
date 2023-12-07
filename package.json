@@ -5,13 +5,14 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --reporter mocha-junit-reporter"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
     "chai": "^4.3.10",
     "coveralls-next": "^4.2.0",
-    "mocha": "^10.2.0"
+    "mocha": "^10.2.0",
+    "mocha-junit-reporter": "^2.2.1"
   }
 }
