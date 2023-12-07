@@ -1,13 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="0.007" tests="3" failures="0">
-  <testsuite name="Root Suite" timestamp="2023-12-07T14:43:24" tests="0" time="0.000" failures="0">
+<testsuites name="Mocha Tests" time="0.190" tests="41" failures="4">
+  <testsuite name="Root Suite" timestamp="2023-12-07T15:29:14" tests="0" time="0.000" failures="0">
   </testsuite>
-  <testsuite name="isEmpty" timestamp="2023-12-07T14:43:24" tests="3" file="C:\Users\Atte\Documents\Projektit\Koulujutut\Software testing\COMP.SE.200-2023-2024-1-main\Software-Testing\test\isEmpty.test.js" time="0.005" failures="0">
-    <testcase name="isEmpty should return true for null" time="0.000" classname="should return true for null">
+  <testsuite name="difference" timestamp="2023-12-07T15:29:14" tests="9" file="C:\Users\Atte\Documents\Projektit\Koulujutut\Software testing\COMP.SE.200-2023-2024-1-main\Software-Testing\test\difference.test.js" time="0.179" failures="1">
+    <testcase name="difference should return an array of values not included in the other arrays" time="0.002" classname="should return an array of values not included in the other arrays">
     </testcase>
+    <testcase name="difference should handle multiple arrays" time="0.001" classname="should handle multiple arrays">
+    </testcase>
+    <testcase name="difference should return an empty array if the input array is empty" time="0.000" classname="should return an empty array if the input array is empty">
+    </testcase>
+    <testcase name="difference should return an empty array if no values are provided" time="0.000" classname="should return an empty array if no values are provided">
+    </testcase>
+    <testcase name="difference should handle non-array input gracefully" time="0.000" classname="should handle non-array input gracefully">
+    </testcase>
+    <testcase name="difference should handle mixed data types" time="0.001" classname="should handle mixed data types">
+    </testcase>
+    <testcase name="difference should handle empty arrays in values" time="0.001" classname="should handle empty arrays in values">
+      <failure message="expected [ 1, 2 ] to deeply equal [ 1, 2, 3 ]" type="AssertionError"><![CDATA[AssertionError: expected [ 1, 2 ] to deeply equal [ 1, 2, 3 ]
+    at Context.<anonymous> (file:///C:/Users/Atte/Documents/Projektit/Koulujutut/Software%20testing/COMP.SE.200-2023-2024-1-main/Software-Testing/test/difference.test.js:37:28)
+    at process.processImmediate (node:internal/timers:476:21)
+
+      + expected - actual
+
+       [
+         1
+         2
+      +  3
+       ]
+      ]]></failure>
+    </testcase>
+    <testcase name="difference should handle undefined and null values" time="0.000" classname="should handle undefined and null values">
+    </testcase>
+    <testcase name="difference should handle large arrays efficiently" time="0.170" classname="should handle large arrays efficiently">
+    </testcase>
+  </testsuite>
+  <testsuite name="get" timestamp="2023-12-07T15:29:15" tests="18" file="C:\Users\Atte\Documents\Projektit\Koulujutut\Software testing\COMP.SE.200-2023-2024-1-main\Software-Testing\test\get.test.js" time="0.008" failures="3">
+    <testcase name="get should return defaultValue for an empty object" time="0.000" classname="should return defaultValue for an empty object">
+    </testcase>
+    <testcase name="get should return defaultValue for an empty array" time="0.000" classname="should return defaultValue for an empty array">
+    </testcase>
+    <testcase name="get should return defaultValue for an empty string" time="0.000" classname="should return defaultValue for an empty string">
+      <failure message="expected +0 to equal &apos;default&apos;" type="AssertionError"><![CDATA[AssertionError: expected +0 to equal 'default'
+    at Context.<anonymous> (file:///C:/Users/Atte/Documents/Projektit/Koulujutut/Software%20testing/COMP.SE.200-2023-2024-1-main/Software-Testing/test/get.test.js:21:52)
+    at process.processImmediate (node:internal/timers:476:21)
+
+      + expected - actual:  failed to generate Mocha diff
+]]></failure>
+    </testcase>
+    <testcase name="get should return defaultValue for an empty Map" time="0.000" classname="should return defaultValue for an empty Map">
+    </testcase>
+    <testcase name="get should return defaultValue for an empty Set" time="0.000" classname="should return defaultValue for an empty Set">
+    </testcase>
+    <testcase name="get should get a nested property from a non-empty object" time="0.000" classname="should get a nested property from a non-empty object">
+    </testcase>
+    <testcase name="get should get a nested property from a non-empty array" time="0.001" classname="should get a nested property from a non-empty array">
+    </testcase>
+    <testcase name="get should return defaultValue for a non-empty string" time="0.000" classname="should return defaultValue for a non-empty string">
+      <failure message="expected 3 to equal &apos;default&apos;" type="AssertionError"><![CDATA[AssertionError: expected 3 to equal 'default'
+    at Context.<anonymous> (file:///C:/Users/Atte/Documents/Projektit/Koulujutut/Software%20testing/COMP.SE.200-2023-2024-1-main/Software-Testing/test/get.test.js:50:52)
+    at process.processImmediate (node:internal/timers:476:21)
+
+      + expected - actual:  failed to generate Mocha diff
+]]></failure>
+    </testcase>
+    <testcase name="get should return defaultValue for a non-empty Map" time="0.000" classname="should return defaultValue for a non-empty Map">
+      <failure message="expected &apos;default&apos; to equal &apos;value&apos;" type="AssertionError"><![CDATA[AssertionError: expected 'default' to equal 'value'
+    at Context.<anonymous> (file:///C:/Users/Atte/Documents/Projektit/Koulujutut/Software%20testing/COMP.SE.200-2023-2024-1-main/Software-Testing/test/get.test.js:56:49)
+    at process.processImmediate (node:internal/timers:476:21)
+
+      + expected - actual
+
+      -default
+      +value
+      ]]></failure>
+    </testcase>
+    <testcase name="get should return defaultValue for a non-empty Set" time="0.000" classname="should return defaultValue for a non-empty Set">
+    </testcase>
+    <testcase name="get should get a nested property using dot notation" time="0.000" classname="should get a nested property using dot notation">
+    </testcase>
+    <testcase name="get should get a nested property using array notation" time="0.000" classname="should get a nested property using array notation">
+    </testcase>
+    <testcase name="get should return defaultValue for undefined property" time="0.000" classname="should return defaultValue for undefined property">
+    </testcase>
+    <testcase name="get should handle null or undefined object" time="0.000" classname="should handle null or undefined object">
+    </testcase>
+    <testcase name="get should handle an object with a custom prototype" time="0.000" classname="should handle an object with a custom prototype">
+    </testcase>
+    <testcase name="get should handle a sparse array" time="0.000" classname="should handle a sparse array">
+    </testcase>
+    <testcase name="get should handle an array-like object (arguments)" time="0.000" classname="should handle an array-like object (arguments)">
+    </testcase>
+    <testcase name="get should handle an object with a custom length" time="0.000" classname="should handle an object with a custom length">
+    </testcase>
+  </testsuite>
+  <testsuite name="isEmpty" timestamp="2023-12-07T15:29:15" tests="14" file="C:\Users\Atte\Documents\Projektit\Koulujutut\Software testing\COMP.SE.200-2023-2024-1-main\Software-Testing\test\isEmpty.test.js" time="0.002" failures="0">
     <testcase name="isEmpty should return true for empty array" time="0.000" classname="should return true for empty array">
     </testcase>
-    <testcase name="isEmpty should return false for non-empty array" time="0.000" classname="should return false for non-empty array">
+    <testcase name="isEmpty should return true for an empty string" time="0.001" classname="should return true for an empty string">
+    </testcase>
+    <testcase name="isEmpty should return true for an empty object" time="0.000" classname="should return true for an empty object">
+    </testcase>
+    <testcase name="isEmpty should return true for an empty Map" time="0.000" classname="should return true for an empty Map">
+    </testcase>
+    <testcase name="isEmpty should return true for an empty Set" time="0.000" classname="should return true for an empty Set">
+    </testcase>
+    <testcase name="isEmpty should return false for a non-empty array" time="0.000" classname="should return false for a non-empty array">
+    </testcase>
+    <testcase name="isEmpty should return false for a non-empty string" time="0.000" classname="should return false for a non-empty string">
+    </testcase>
+    <testcase name="isEmpty should return false for an object with properties" time="0.000" classname="should return false for an object with properties">
+    </testcase>
+    <testcase name="isEmpty should return false for a Map with entries" time="0.001" classname="should return false for a Map with entries">
+    </testcase>
+    <testcase name="isEmpty should return false for a Set with values" time="0.000" classname="should return false for a Set with values">
+    </testcase>
+    <testcase name="isEmpty should return true for null" time="0.000" classname="should return true for null">
+    </testcase>
+    <testcase name="isEmpty should return true for an empty object with custom prototype" time="0.000" classname="should return true for an empty object with custom prototype">
+    </testcase>
+    <testcase name="isEmpty should return false for an object with prototype properties" time="0.000" classname="should return false for an object with prototype properties">
+    </testcase>
+    <testcase name="isEmpty should return false for a sparse array" time="0.000" classname="should return false for a sparse array">
     </testcase>
   </testsuite>
 </testsuites>
