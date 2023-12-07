@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.007" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2023-12-07T14:43:24" tests="0" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="isEmpty" timestamp="2023-12-07T14:43:24" tests="3" file="C:\Users\Atte\Documents\Projektit\Koulujutut\Software testing\COMP.SE.200-2023-2024-1-main\Software-Testing\test\isEmpty.test.js" time="0.005" failures="0">
+    <testcase name="isEmpty should return true for null" time="0.000" classname="should return true for null">
+    </testcase>
+    <testcase name="isEmpty should return true for empty array" time="0.000" classname="should return true for empty array">
+    </testcase>
+    <testcase name="isEmpty should return false for non-empty array" time="0.000" classname="should return false for non-empty array">
+    </testcase>
+  </testsuite>
+</testsuites>
