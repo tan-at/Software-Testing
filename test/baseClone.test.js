@@ -1,4 +1,3 @@
-// Import necessary modules
 import { expect } from "chai";
 import baseClone from "../src/.internal/baseClone.js";
 
@@ -8,7 +7,7 @@ describe("baseClone", () => {
     const cloned = baseClone(input, 1);
 
     expect(cloned).to.deep.equal(input);
-    expect(cloned).to.not.equal(input); // Make sure it's a deep clone
+    expect(cloned).to.not.equal(input);
   });
 
   it("should clone arrays", () => {
